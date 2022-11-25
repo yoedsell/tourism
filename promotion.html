@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Form</title>
+    <link rel="stylesheet" href="promotion.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Promotion Form</h2>
+        
+        <form action="#">
+            <div class="fields">
+                <div class="input-field">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Your Email" required>
+                </div>
+        
+                <div class="input-field">
+                    <label>Mobile Number:</label>
+                    <input type="tel" pattern="[0-9]{8}" title="should have 8 digits" required>   
+                </div>
+        
+                <div class="input-field">
+                    <label>Gender</label>
+                    <select required>
+                    <option disabled selected>Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    </select>
+                </div>
+        
+                <div class="input-field">
+                    <label>Apply Promotion for:</label>
+                    <select required>
+                    <option disabled selected>Select Position</option>
+                    <option>Manager</option>
+                    <option>Director</option>
+                    <option>Head Chef</option>
+                    <option>Travel Agencyt Head</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label>Work Experience</label>
+                    <input type="textarea" style="height: 100px" required>
+                </div>
+                            
+                        
+                <p>
+                    <input type="submit" value="Submit" name="Submit" style="background-color: rgb(75, 212, 121);"/>
+                    <input type="reset" value="Cancel" name="Reset" style="background-color: rgb(203, 91, 91); margin-left: 90px;"/>
+                </p>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <div class="container">
+        <h1>Resignation</h1>
+        
+        <form action="#">
+            <div class="fields">
+                <div class="input-field">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter Your Email" required>
+                </div>
+        
+                <div class="input-field">
+                    <label>Mobile Number:</label>
+                    <input type="tel" pattern="[0-9]{8}" title="should have 8 digits" required>   
+                </div>
+        
+                <div class="input-field">
+                    <label>Gender</label>
+                    <select required>
+                    <option disabled selected>Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    </select>
+                </div>
+        
+                <div class="input-field">
+                    <label>Reasons for Resignation:</label>
+                    <select required>
+                    <option disabled selected>Select Reasons</option>
+                    <option>Career Change</option>
+                    <option>Personal Issues</option>
+                    <option>Retirement</option>
+                    <option>Others</option>
+                    </select>
+                </div>
+
+                <div class="input-field">
+                    <label>No. of years in Service</label>
+                    <input type="number" required>
+                </div>  
+                <p>
+                    <input type="submit" value="Submit" name="Submit" style="background-color: rgb(80, 198, 84);"/>
+                    <input type="reset" value="Cancel" name="Reset" style="background-color: rgb(205, 83, 83); margin-left: 90px;"/>
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="resignation.js"></script>
+    <script src="promotion.js"></script>
+</body>
+</html>

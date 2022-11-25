@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,black,#022a3c) fixed;
+    padding:50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.text
+{
+    color:#eef3f4fa;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+ 
+}
+
+.card{
+    width: 250px;
+    height: auto;
+    position: relative;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+}
+.card > *{
+    padding: 10px;
+}
+.card .card-image{
+    height: 150px;
+    width: 150px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;    
+}
+.card .card-title{
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #262654;
+}
+.card:nth-child(1) .card-image{
+    background-image: url(img/p-7.jpg);
+}
+.card:nth-child(2) .card-image{
+    background-image: url(img/p-8.jpg);
+}
+.card:nth-child(3) .card-image{
+    background-image: url(img/g8.jpg);
+}
+.card:nth-child(4) .card-image{
+    background-image: url(img/g2.webp);
+}
+.card:nth-child(5) .card-image{
+    background-image: url(img/g1.png);
+}
+.card:nth-child(6) .card-image{
+    background-image: url(img/g3.jpg);
+}
+.card:nth-child(7) .card-image{
+    background-image: url(img/g5.jpeg);
+}
+.card:nth-child(8) .card-image{
+    background-image: url(img/g4.jpg);
+}
+.card:nth-child(9) .card-image{
+    background-image: url(img/g7.jpg);
+}
+.card:nth-child(10) .card-image{
+    background-image: url(img/g6.jpeg);
+}
+.card:nth-child(11) .card-image{
+    background-image: url(img/g9.jpg);
+}
+.card:nth-child(12) .card-image{
+    background-image: url(img/g11.jpeg);
+}
+.card:nth-child(13) .card-image{
+    background-image: url(img/g12.jpeg);
+}
+.card:nth-child(14) .card-image{
+    background-image: url(img/g14.jpeg);
+}
+.card:nth-child(15) .card-image{
+    background-image: url(img/g2.webp);
+}
+.card:hover{
+    background: #e84393;
+    color: #fff;
+    box-shadow: 0px 0px 11px 5px #000000;
+
+}
+
+.card .card-text{
+    line-height: 20px;
+    font-size: 400;
+}

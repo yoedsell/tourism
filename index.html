@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- deployment link -->
+    <!-- https://travel-qzrn.onrender.com -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="calender.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>T<span>ravel</span></h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(img/p-8.jpg)"></div>
+                <h4>Yoedsell</h4>
+                <small>Chief Ceo</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="" class="active">
+                            <span class="las la-home"></span>
+                            <small>Home</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="about.html" >
+                            <span class="las la-user-alt"></span>
+                            <small>About</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="inventory.html">
+                            <span class='bx bxl-invision'></span>
+                            <small>Inventory</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="publication.html">
+                            <span class="las la-bars"></span>
+                            <small>Publication</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="help.html">
+                            <span class='bx bx-help-circle'></span>
+                            <small>Help</small>
+                        </a>
+                    </li>
+
+                    <li>
+                       <a href="tour.html">
+                            <span class="las la-tasks"></span>
+                            <small>Tasks</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leave.html">
+                             <span class="las la-envelope"></span>
+                             <small>Application</small>
+                         </a>
+                     </li>
+                     <li>
+                        <a href="promotion.html">
+                             <span class='las la-clipboard-list'></span>
+                             <small>Forms</small>
+                         </a>
+                     </li>
+                    <li>
+                        <a href="policy.html">
+                             <span class='bx bx-notepad'></span>
+                             <small>Policy</small>
+                         </a>
+                     </li>
+                     <li>
+                        <a href="login.html">
+                             <span class='bx bx-log-out'></span>
+                             <small>Logout</small>
+                         </a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <div class="notify-icon">
+                        <div class="icon" onclick="toggleNotifi()">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">5</span>
+                        
+                    </div>
+                </div>
+                    
+                    <div class="notifi-box" id="box">
+                        <h2>Notifications <span>5</span></h2>
+                        <div class="notifi-item">
+                            <img src="img/p-1.jpg" alt="img">
+                            <div class="text">
+                               <h4>Jhon Mahammed</h4>
+                               <p>@Jhon123.com</p>
+                            </div> 
+                        </div>
+            
+                        <div class="notifi-item">
+                            <img src="img/p-2.jpg" alt="img">
+                            <div class="text">
+                               <h4>Chimmi GD</h4>
+                               <p>@chimmi123.com</p>
+                            </div> 
+                        </div>
+            
+                        <div class="notifi-item">
+                            <img src="img/p-3.jpg" alt="img">
+                            <div class="text">
+                               <h4>Lungten </h4>
+                               <p>@lungten.com</p>
+                            </div> 
+                        </div>
+            
+                        <div class="notifi-item">
+                            <img src="img/p-4.jpg" alt="img">
+                            <div class="text">
+                               <h4>Jay Cee</h4>
+                               <p>@jaycee.com</p>
+                            </div> 
+                        </div>
+            
+                        <div class="notifi-item">
+                            <img src="img/p-5.jpeg" alt="img">
+                            <div class="text">
+                               <h4>Sonam Dema</h4>
+                               <p>@sonamdema.com</p>
+                            </div> 
+                        </div>
+            
+                    </div>
+                    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(img/p-7.jpg)"></div>
+                        
+                        <span>Manager</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>Travel Information Management System</h1>
+                <small>Home / Dashboard</small>
+            </div>
+
+            
+    <div class="home-content">
+        <div class="overview-boxes">
+         
+            <div class="page-content">
+            
+                <div class="analytics">
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>7,200</h2>
+                            <span class="las la-user-friends"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Visiters this year</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>340,230</h2>
+                            <span class="las la-eye"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Page views</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>$653,200</h2>
+                            <span class="las la-shopping-cart"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Monthly revenue growth</small>
+                            <div class="card-indicator">
+                                <div class="indicator three" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <span class="las la-envelope"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>New E-mails received</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Top Visiters</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th><span class="las la-sort"></span> VISITERS </th>
+                                    <th><span class="las la-sort"></span> TOTAL EXPENDITURE</th>
+                                    <th><span class="las la-sort"></span> LAST DATE</th>
+                                    <th><span class="las la-sort"></span> BALANCE</th>
+                                    <th><span class="las la-sort"></span> ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g1.png)"></div>
+                                            <div class="client-info">
+                                                <h4>Keyppo Bruno</h4>
+                                                <small>bruno@gamil.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5034</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/1.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Bruno Fernandes</h4>
+                                                <small>exty@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2013
+                                    </td>
+                                    <td>
+                                        20 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5035</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g3.jpg)"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        24 April, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5036</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/3.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Karma Wangmo</h4>
+                                                <small>karma@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $1232
+                                    </td>
+                                    <td>
+                                        02 May, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5037</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g3.jpg)"></div>
+                                            <div class="client-info">
+                                                <h4>Sonam Tashi</h4>
+                                                <small>sonam@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2090
+                                    </td>
+                                    <td>
+                                        06 May, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5038</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g4.jpg)"></div>
+                                            <div class="client-info">
+                                                <h4>Sonam Tshering</h4>
+                                                <small>tshering@gmail.cm</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3102
+                                    </td>
+                                    <td>
+                                        12 May, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5039</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g11.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Ugen Tashi</h4>
+                                                <small>ugyen@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2113
+                                    </td>
+                                    <td>
+                                        15 May, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5040</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g12.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Khenrab</h4>
+                                                <small>khenrab@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $1225
+                                    </td>
+                                    <td>
+                                        22 May, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5041</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/g14.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Sonam Dargay</h4>
+                                                <small>dargay@gmail.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3122
+                                    </td>
+                                    <td>
+                                        23 May, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    
+                      <div class="calendar">
+                        <div class="input-group d-sm-flex">
+                          </div>
+                        <div class="month">
+                            <i class="fas fa-angle-left prev"></i>
+                            <div class="date">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>SUN</div>
+                            <div>MON</div>
+                            <div>TUE</div>
+                            <div>WED</div>
+                            <div>THU</div>
+                            <div>FRI</div>
+                            <div>SAT</div>
+                        </div>
+                        <div class="days" onclick="document.getElementById('myModal').style.display='block'">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </main>
+        
+    </div>
+    <script src="calender.js"></script>
+    <script src="notification.js"></script>
+
+</body>
+</html>

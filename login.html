@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="signIn box">
+                <h3 style="padding: 10px;">Already have an account ?</h3>
+                <button class="signInButton" style="padding: 7px; width: 150px; background-color: #7689DE;">Sign in</button>
+            </div>
+            <div class="register box">
+                <h3 style="padding: 10px;">Don't have an account ?</h3>
+                <button class="registerButton" style="padding: 7px; width: 150px; background-color: #a9dce3" >Register</button>
+            </div>
+        </div>
+        <div class="formBox">
+            <!-- SignIn Form -->
+            <div class="form signInForm">
+                <form action="#" class="form_signUp" method="POST">
+                    <h3>Sign In</h3>
+                    <small id="small"></small>
+                    <div class="form_field">
+                        <input id="username" type="text" placeholder="Username" style="padding: 5px;">
+                        <small></small>
+                    </div>
+                    <div class="form_field">
+                        <input id="password" type="password" placeholder="Password" style="padding: 5px;" >
+                        <small></small>
+                    </div>
+                    
+                        <button type="submit" id="login" style="padding: 5px;"> <a href="index.html" style="text-decoration: none; color: black;">Login</a></button>
+                        <a href="forgotPassword.html" class="forgot" style="padding-top:15px;">Forgot Password</a>
+                </form>
+            </div>
+            <!-- SignUp Form -->
+            <div class="form registerForm">
+                <form action="#" class="form_signUp" method="POST">
+                    <h3>Register</h3>
+                    <small id="invalid"></small>
+                    <div class="form_field">
+                        <input id="Name" type="text" placeholder="Name" style="padding: 5px;">
+                        <small></small>
+                    </div>
+                    <div class="form_field">
+                        <input id="email" type="text" placeholder="Email Address" style="padding: 5px;">
+                        <small></small>
+                    </div>
+                    <div class="form_field">
+                        <input id="pass" type="password" placeholder="Password" style="padding: 5px;">
+                        <small></small>
+                    </div>
+                    <div class="form_field">
+                        <input id="confirmPass" type="password" placeholder="Confirm Password" style="padding: 5px;">         
+                        <small></small>
+                    </div>
+                    <button type="submit" id="register" style="padding: 5px;"> <a href="index.html" style="text-decoration: none; color: black;"></a>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="login_validation.js"></script>
+</body>
+</html>
